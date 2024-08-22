@@ -1,0 +1,43 @@
+/* Diseño general del formulario */
+.loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Corrección del valor del gap */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 400px; /* Máximo ancho del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+/* Estilos para los campos de entrada */
+.loginform input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Estilo para el botón */
+.loginform button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginform button:hover {
+    background-color: #0056b3;
+}
