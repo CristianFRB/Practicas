@@ -23,6 +23,10 @@ export function LoginForm() {
           onChange={e => setContraseña(e.target.value)}
         />
         <Boton type="submit">Iniciar sesión</Boton>
+        <Enlaces>
+          <Link href="/crear-cuenta">Crear cuenta</Link>
+          <Link href="/recuperar-contraseña">Recuperar contraseña</Link>
+        </Enlaces>
       </form>
     </LoginFomr>
   );
@@ -82,5 +86,22 @@ const Boton = styled.button`
   
   &:hover {
     background-color: #e76f51; 
+  }
+`;
+
+const Enlaces = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+`;
+
+const Link = styled.a`
+  color: #cbffa9;
+  font-size: 0.9rem;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
   }
 `;
